@@ -1,4 +1,4 @@
-/* Global Styles */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,101 +11,136 @@ body {
     color: #5A5A5A;
 }
 
-header {
-    background-color: #5A5A5A;
-    padding: 20px;
-}
-
-header nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-}
-
-header nav ul li {
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: #FFFFFF;
+a {
     text-decoration: none;
-    font-weight: bold;
+    color: #5A5A5A;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Main Content */
-section {
-    margin: 20px;
-    padding: 20px;
+/* Header and Navigation */
+header {
     background-color: #FFFFFF;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
 }
 
-h1, h2 {
-    color: #5A5A5A;
+nav ul {
+    list-style-type: none;
     text-align: center;
-    margin-bottom: 10px;
 }
 
-p {
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-size: 18px;
     color: #5A5A5A;
-    line-height: 1.6;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #D3D3D3;
+    border-radius: 5px;
+}
+
+/* Second Navigation Bar for Impacts Page */
+#impacts-nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+#impacts-nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#impacts-nav ul li a {
+    font-size: 16px;
+    color: #5A5A5A;
+    padding: 8px 16px;
+}
+
+#impacts-nav ul li a:hover {
+    background-color: #D3D3D3;
+    border-radius: 5px;
+}
+
+/* Main Wrapper */
+.wrapper {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #5A5A5A;
     margin-bottom: 20px;
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #5A5A5A;
+    margin-bottom: 20px;
 }
 
-ul li {
-    margin-bottom: 10px;
-}
-
-/* Images */
 img {
-    display: block;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     margin: 20px 0;
     border-radius: 8px;
 }
 
-/* Impacts Navigation */
-#impacts-nav {
-    text-align: center;
-    margin-top: 20px;
+/* Bullet points */
+ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    margin-bottom: 30px;
 }
 
-#impacts-nav ul {
-    display: inline-flex;
-    list-style-type: none;
-}
-
-#impacts-nav ul li {
-    margin-right: 20px;
-}
-
-#impacts-nav ul li a {
+ul li {
+    font-size: 16px;
     color: #5A5A5A;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#impacts-nav ul li a:hover {
-    text-decoration: underline;
 }
 
 /* Footer */
 footer {
+    background-color: #FFFFFF;
     text-align: center;
-    padding: 20px;
-    background-color: #5A5A5A;
-    color: #FFFFFF;
-    position: fixed;
-    width: 100%;
+    padding: 10px 0;
+    position: relative;
     bottom: 0;
+    width: 100%;
+    color: #5A5A5A;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #impacts-nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
